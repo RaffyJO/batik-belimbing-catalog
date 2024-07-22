@@ -14,5 +14,6 @@ class Award extends Model
         'description',
         'date',
         'image',
+        'is_active',
     ];
 }

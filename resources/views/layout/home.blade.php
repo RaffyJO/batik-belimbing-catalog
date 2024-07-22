@@ -42,6 +42,42 @@
             color: #ccc;
         }
     </style> --}}
+    <style>
+        .map-responsive {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        } 
+
+        .card-title-product {
+            font-size: 15px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .card-title-product i {
+            font-size: 15px;
+            transition: 1s;
+            cursor: pointer;
+            color: #ffa710;
+        }
+        .card-title-product i:hover {
+            transform: scale(1.25) rotate(100deg);
+            color: #18d4ca;
+        }
+        .card-text-product {
+            height: 80px;
+        }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css    ">
@@ -88,7 +124,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <a href="/login" class="btn btn-warning me-2">Login</a>
+                        <a href="/dashboard" class="btn btn-warning me-2">Login</a>
                     </form>
 
                 </div>
@@ -234,8 +270,37 @@
         </section>
     </div>
     </section>
+    <section>
+        <div class="aktivitas_main_header mt-3 mb-5 text-center">Produk</div>
+        <div class="container-xl mt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 col-sm-6 mr-4">
+                    <div class="card card-block" style="width: 18rem; height: 25rem;">
+                        <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset" style="width: 100%; height: 50%; object-fit: cover;">
+                        <h5 class="card-title-product mt-3 mb-3" style="padding: 10px;">Sierra Web Development • Owner</h5>
+                        <p class="card-text-product" style="padding: 10px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">This is a company that builds websites, web apps and e-commerce solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mr-4">
+                    <div class="card card-block" style="width: 18rem; height: 25rem;">
+                        <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset" style="width: 100%; height: 50%; object-fit: cover;">
+                        <h5 class="card-title-product mt-3 mb-3" style="padding: 10px;">ProVyuh</h5>
+                        <p class="card-text-product" style="padding: 10px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">This is a company that builds websites, web .</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mr-4">
+                    <div class="card card-block" style="width: 18rem; height: 25rem;">
+                        <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset" style="width: 100%; height: 50%; object-fit: cover;">
+                        <h5 class="card-title-product mt-3 mb-3" style="padding: 10px;">ProVyuh</h5>
+                        <p class="card-text-product" style="padding: 10px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">This is a company that builds websites, web apps and e-commerce solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+               
+    </section>
     <section class="" id="testimoni">
-        <div class="container-xl">
+        <div class="container-xl mt-2">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="aktivitas_main_header mt-3 mb-5 text-center">Testimoni</div>
@@ -362,27 +427,18 @@
                 <div class="aktivitas_main_header mt-3 mb-5 text-center">Hubungi Kami</div>
                 <div class="col-md-6">
                     <h1 class="kontak_header">Hubungi Kami!</h1>
-                    <p class="kontak_text">Jika ada kendala masalah login atau masalah lainnya, silahkan hubungi kami
-                    </p>
-                </div>
-                <div class="col-md-6">
+                    <p class="kontak_text">Jika ada kendala masalah login atau masalah lainnya, silahkan hubungi kami</p>
                     <div class="card">
                         <div class="card-body">
                             <form action="/hubungi-kami" method="POST">
                                 @csrf
                                 <div class="form-group mb-3">
                                     <label for="nama" class="form-label m-1">Nama Anda</label>
-                                    <input type="text" name="nama" id="nama"
-                                        class="form-control bg-white">
+                                    <input type="text" name="nama" id="nama" class="form-control bg-white">
                                 </div>
-                                {{-- <div class="form-group mb-3">
-                                    <label for="email" class="form-label m-1">Email Anda</label>
-                                    <input type="email" name="email" id="email" class="form-control bg-white">
-                                </div> --}}
                                 <div class="form-group mb-3">
                                     <label for="subjek" class="form-label m-1">Subjek Anda</label>
-                                    <input type="text" name="subjek" id="subjek"
-                                        class="form-control bg-white">
+                                    <input type="text" name="subjek" id="subjek" class="form-control bg-white">
                                 </div>
                                 <div class="form-group mb-3">
                                     <label for="pesan" class="form-label m-1">Pesan Anda</label>
@@ -392,7 +448,14 @@
                             </form>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-md-6">
+                    <h1 class="kontak_header">Lokasi Kami</h1>
+                    <p class="kontak_text">Temukan kami di lokasi berikut.</p>
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5541113372287!2d112.63699114412204!3d-7.94154758583409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629c1cc0bcb0b%3A0x6126b56d17e2ff96!2sJl.%20Candi%20Jago%20No.6%2C%20Blimbing%2C%20Kec.%20Blimbing%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065126!5e0!3m2!1sen!2sid!4v1721051642165!5m2!1sen!2sid"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

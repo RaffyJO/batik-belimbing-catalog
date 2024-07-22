@@ -13,5 +13,6 @@ class Testimony extends Model
         'name',
         'description',
         'image',
+        'is_active',
     ];
 }

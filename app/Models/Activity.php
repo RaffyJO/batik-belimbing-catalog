@@ -15,5 +15,6 @@ class Activity extends Model
         'location',
         'date',
         'image',
+        'is_active',
     ];
 }
