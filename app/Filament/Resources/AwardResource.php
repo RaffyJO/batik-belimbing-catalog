@@ -29,18 +29,18 @@ class AwardResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
+                TextInput::make('nama')
                     ->required()
-                    ->placeholder('Enter name'),
-                DatePicker::make('date')->required(),
-                Textarea::make('description')
+                    ->placeholder('Masukkan nama penghargaan'),
+                DatePicker::make('tanggal')->required(),
+                Textarea::make('deskripsi')
                     ->required()
-                    ->placeholder('Enter description')
+                    ->placeholder('Masukkan deskripsi penghargaan')
                     ->rows(10)
                     ->cols(20),
-                FileUpload::make('image')
+                FileUpload::make('gambar')
                     ->directory('uploads/awards')
-                    ->maxSize(1024),
+                    ->maxSize(2048),
             ]);
     }
 
@@ -48,10 +48,10 @@ class AwardResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('image')->size(50),
-                TextColumn::make('name')->searchable()->sortable(),
-                TextColumn::make('date')->searchable()->sortable(),
-                TextColumn::make('description')->wrap(),
+                ImageColumn::make('gambar')->size(50),
+                TextColumn::make('nama')->searchable()->sortable(),
+                TextColumn::make('tanggal')->searchable()->sortable(),
+                TextColumn::make('deskripsi')->wrap(),
             ])
             ->filters([
                 //
@@ -81,5 +81,16 @@ class AwardResource extends Resource
             'create' => Pages\CreateAward::route('/create'),
             'edit' => Pages\EditAward::route('/{record}/edit'),
         ];
+    }
+
+    public static function getLabel(): ?string
+    {
+        $locale = app()->getLocale();
+
+        if ($locale === 'id') {
+            return 'Penghargaan';
+        }
+
+        return 'Award';
     }
 }

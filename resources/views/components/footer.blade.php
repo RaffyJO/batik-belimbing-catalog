@@ -4,10 +4,10 @@
         <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
             <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
                 <div class="flex items-center mb-2">
-                    <span class="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">Batik Belimbing Malang</span>
+                    <span class="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">Batik Blimbing Malang</span>
                     <!-- <img src="src/img-min/logo.png" alt="LOGO"> -->
                 </div>
-                <p>Aulya Rishmawati Pemilik Batik Belimbing Malang.</p>
+                <p>Aulya Rishmawati Pemilik Batik Blimbing Malang.</p>
                 <ul class="space-x-3 mt-6 mb-6 Lg:mb-0">
                     <!--facebook-->
                     <li class="inline-block">
@@ -62,7 +62,7 @@
                     <!--whatsapp-->
                     <li class="inline-block">
                         <a target="_blank" class="hover:text-gray-800" rel="noopener noreferrer"
-                            href="https://wa.me/6281334585892" title="WhatsApp">
+                            href="https://wa.me/6281334585892?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Batik%20Blimbing%20Malang." title="WhatsApp">
                             <!-- WhatsApp Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2rem" height="2rem" viewBox="0,0,256,256" style="fill:#000000;"> <g fill="#5c5959" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g> </svg>
                         </a>
@@ -70,7 +70,7 @@
                     <!--gmail-->
                     <li class="inline-block">
                         <a target="_blank" class="hover:text-gray-800" rel="noopener noreferrer"
-                            href="mailto:aulya.ima@gmail.com?subject=Batik%20Belimbing%20Malang&body=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Batik%20Belimbing%20Malang." title="Gmail">
+                            href="mailto:aulya.ima@gmail.com?subject=Batik%20Blimbing%20Malang&body=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Batik%20Blimbing%20Malang." title="Gmail">
                             <!-- Gmail Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2rem" height="2rem" viewBox="0,0,256,256" style="fill:#000000;"> <g fill="#5c5959" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path></g></g> </svg>
                         </a>
@@ -79,7 +79,7 @@
             </div>
             <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
                 <p class="text-xl leading-normal text-gray-600">
-                    Terima kasih telah mengunjungi Batik Belimbing Malang! Kami menghargai dukungan Anda dan berkomitmen untuk menyediakan pengalaman terbaik. Untuk pertanyaan, umpan balik, atau informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui media sosial kami. Kami selalu siap membantu dan mendengar pendapat Anda.
+                    Terima kasih telah mengunjungi Batik Blimbing Malang! Kami menghargai dukungan Anda dan berkomitmen untuk menyediakan pengalaman terbaik. Untuk pertanyaan, umpan balik, atau informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui media sosial kami. Kami selalu siap membantu dan mendengar pendapat Anda.
                 </p>
             </div>
         </div>
@@ -91,7 +91,7 @@
     <div class="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 border-opacity-10">
         <div class="row">
             <div class="col-12 col-md text-center">
-                <p class="d-block my-3">Copyright © 2024 Batik Belimbing Malang | All rights reserved.</p>
+                <p class="d-block my-3">Copyright © 2024 Batik Blimbing Malang | All rights reserved.</p>
             </div>
         </div>
     </div>

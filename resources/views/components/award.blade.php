@@ -12,12 +12,16 @@
                 data-wow-duration="1s" data-wow-delay=".1s">
                 <!-- service block -->
                 <div
-                    class="py-4 px-4 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    class="py-4 px-4 mb-12 transform transition duration-300 ease-in-out hover:-translate-y-2">
                     <div class="inline-block text-gray-900 mb-4">
-                        <img src="{{ Storage::url($award->image) }}" alt="creative agency" style="max-height: 200px; object-fit: cover;">
+                        <img src="{{ Storage::url($award->gambar) }}" alt="Penghargaan Batik Malang" style="min-height: 200px; max-height: 200px; object-fit: cover;">
                     </div>
-                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Penghargaan Nasional</h3>
-                    <p class="text-gray-500">Penghargaan Nasional 2024</p>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                        {{ $award->nama }}
+                    </h3>
+                    <p class="text-gray-500" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
+                        {{ $award->deskripsi }}
+                    </p>
                 </div><!-- end service block -->
             </div>
         @endforeach

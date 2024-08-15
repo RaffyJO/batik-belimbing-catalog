@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description');
-            $table->string('location');
-            $table->date('date');
-            $table->string('image')->nullable();
-            $table->boolean('is_active')->default(false);
+            $table->string('nama');
+            $table->text('deskripsi');
+            $table->string('lokasi');
+            $table->date('tanggal');
+            $table->string('gambar')->nullable();
+            // $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }

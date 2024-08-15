@@ -7,6 +7,7 @@ use App\Filament\Resources\TestimonyResource\RelationManagers;
 use App\Models\Testimony;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -29,21 +30,23 @@ class TestimonyResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
+                TextInput::make('nama')
                     ->required()
-                    ->placeholder('Enter name'),
-                Toggle::make('is_active')
-                ->label('Active')
-                ->default(false)
-                ->required(),
-                Textarea::make('description')
-                    ->required()
-                    ->placeholder('Enter description')
-                    ->rows(10)
-                    ->cols(20),
-                FileUpload::make('image')
-                    ->directory('uploads/testimonies')
-                    ->maxSize(1024),
+                    ->placeholder('Masukkan nama testimoni'),
+                // Toggle::make('is_active')
+                // ->label('Active')
+                // ->default(false)
+                // ->required(),
+                Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
+                    Textarea::make('deskripsi')
+                        ->required()
+                        ->placeholder('Masukkan deskripsi testimoni')
+                        ->rows(10)
+                        ->cols(20),
+                    FileUpload::make('gambar')
+                        ->directory('uploads/testimonies')
+                        ->maxSize(2048),
+                ]),
             ]);
     }
 
@@ -51,9 +54,9 @@ class TestimonyResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('image')->size(50),
-                TextColumn::make('name')->searchable()->sortable(),
-                TextColumn::make('description')->wrap(),
+                ImageColumn::make('gambar')->size(50),
+                TextColumn::make('nama')->searchable()->sortable(),
+                TextColumn::make('deskripsi')->wrap(),
             ])
             ->filters([
                 //
@@ -83,5 +86,16 @@ class TestimonyResource extends Resource
             'create' => Pages\CreateTestimony::route('/create'),
             'edit' => Pages\EditTestimony::route('/{record}/edit'),
         ];
+    }
+
+    public static function getLabel(): ?string
+    {
+        $locale = app()->getLocale();
+
+        if ($locale === 'id') {
+            return 'Testimoni';
+        }
+
+        return 'Testimony';
     }
 }

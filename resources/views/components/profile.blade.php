@@ -14,10 +14,10 @@
             <div class="text-center lg:text-left mt-6 lg:mt-0">
                 <div class="mb-12">
                     <h1 class="text-4xl leading-normal text-black font-bold mb-4">
-                        Batik Belimbing Malang
+                        Batik Blimbing Malang
                     </h1>
                     <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
-                        Batik Belimbing Malang adalah usaha yang berfokus pada produksi dan penjualan baju batik berkualitas tinggi dengan desain khas Malang. Menggabungkan keindahan motif tradisional dengan sentuhan modern.
+                        Batik Blimbing Malang adalah usaha yang berfokus pada produksi dan penjualan baju batik berkualitas tinggi dengan desain khas Malang. Menggabungkan keindahan motif tradisional dengan sentuhan modern.
                     </p>
                 </div>
             </div>
@@ -31,10 +31,10 @@
             <div class="flex-shrink max-w-full mb-4 px-4 w-full md:w-6/12 self-center" data-aos="zoom-in">
                 <div class="mt-6 lg:mt-0">
                     <p class="text-4xl text-black font-bold mb-4">
-                        Sejarah Batik Belimbing Malang
+                        Sejarah Batik Blimbing Malang
                     </p>
                     <p class="text-gray-500 leading-relaxed font-light text-xl">
-                        Batik Belimbing Malang didirikan pada tahun 2010 oleh seorang pengusaha lokal yang memiliki kecintaan mendalam terhadap seni dan budaya tradisional. Berawal dari sebuah usaha kecil di sudut kota Malang, usaha ini bertujuan untuk melestarikan warisan budaya batik yang khas dan unik dari daerah tersebut.
+                        Batik Blimbing Malang didirikan pada tahun 2010 oleh seorang pengusaha lokal yang memiliki kecintaan mendalam terhadap seni dan budaya tradisional. Berawal dari sebuah usaha kecil di sudut kota Malang, usaha ini bertujuan untuk melestarikan warisan budaya batik yang khas dan unik dari daerah tersebut.
                     </p>
                 </div>
             </div>

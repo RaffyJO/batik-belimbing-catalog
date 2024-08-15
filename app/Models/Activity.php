@@ -10,11 +10,10 @@ class Activity extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'description',
-        'location',
-        'date',
-        'image',
-        'is_active',
+        'nama',
+        'deskripsi',
+        'lokasi',
+        'tanggal',
+        'gambar',
     ];
 }

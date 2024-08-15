@@ -14,11 +14,15 @@
                     <div class="splide__list grayscale">
                         @foreach ($testimonies as $testimony)
                             <div class="splide__slide">
-                                <div class="w-full px-4 text-center pb-3">
-                                    <a href="#" target="_blank">
+                                <div class="w-full px-4 text-left pb-3">
+                                    <h3 class="text-lg leading-normal font-bold mb-1">{{ $testimony->nama }}</h3>
+                                    <h1 class="text-gray-500 leading-relaxed font-light" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
+                                        {{ $testimony->deskripsi }}
+                                    </h1>
+                                    {{-- <a href="#" target="_blank">
                                         <img class="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                                             src="{{ Storage::url($testimony->image) }}" alt="{{ $testimony->name }}">
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         @endforeach

@@ -10,9 +10,8 @@ class Testimony extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'description',
-        'image',
-        'is_active',
+        'nama',
+        'deskripsi',
+        'gambar',
     ];
 }

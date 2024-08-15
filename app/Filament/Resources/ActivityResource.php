@@ -8,6 +8,7 @@ use App\Models\Activity;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -31,25 +32,27 @@ class ActivityResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
+                TextInput::make('nama')
                     ->required()
-                    ->placeholder('Enter name'),
-                TextInput::make('location')
+                    ->placeholder('Masukkan nama kegiatan'),
+                TextInput::make('lokasi')
                     ->required()
-                    ->placeholder('Enter location'),
-                DatePicker::make('date')->required(),
-                Toggle::make('is_active')
-                    ->label('Active')
-                    ->default(false)
-                    ->required(),
-                Textarea::make('description')
-                    ->required()
-                    ->placeholder('Enter description')
-                    ->rows(10)
-                    ->cols(20),
-                FileUpload::make('image')
-                    ->directory('uploads/activities')
-                    ->maxSize(1024),
+                    ->placeholder('Masukkan lokasi kegiatan'),
+                DatePicker::make('tanggal')->required(),
+                // Toggle::make('is_active')
+                //     ->label('Active')
+                //     ->default(false)
+                //     ->required(),
+                Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
+                    Textarea::make('deskripsi')
+                        ->required()
+                        ->placeholder('Masukkan deskripsi kegiatan')
+                        ->rows(10)
+                        ->cols(20),
+                    FileUpload::make('gambar')
+                        ->directory('uploads/activities')
+                        ->maxSize(2048),
+                ]),
             ]);
     }
 
@@ -57,11 +60,11 @@ class ActivityResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('image')->size(50),
-                TextColumn::make('name')->searchable()->sortable(),
-                TextColumn::make('location')->searchable()->sortable(),
-                TextColumn::make('date')->searchable()->sortable(),
-                TextColumn::make('description')->wrap(),            
+                ImageColumn::make('gambar')->size(50),
+                TextColumn::make('nama')->searchable()->sortable(),
+                TextColumn::make('lokasi')->searchable()->sortable(),
+                TextColumn::make('tanggal')->searchable()->sortable(),
+                TextColumn::make('deskripsi')->wrap(),            
             ])
             ->filters([
                 //
@@ -91,5 +94,16 @@ class ActivityResource extends Resource
             'create' => Pages\CreateActivity::route('/create'),
             'edit' => Pages\EditActivity::route('/{record}/edit'),
         ];
+    }
+
+    public static function getLabel(): ?string
+    {
+        $locale = app()->getLocale();
+
+        if ($locale === 'id') {
+            return 'Kegiatan';
+        }
+
+        return 'Activity';
     }
 }

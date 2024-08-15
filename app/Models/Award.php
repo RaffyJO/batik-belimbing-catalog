@@ -10,10 +10,9 @@ class Award extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'description',
-        'date',
-        'image',
-        'is_active',
+        'nama',
+        'deskripsi',
+        'tanggal',
+        'gambar',
     ];
 }

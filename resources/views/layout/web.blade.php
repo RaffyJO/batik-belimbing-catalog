@@ -12,6 +12,7 @@
 
     <!-- Development css -->
     <link rel="stylesheet" href="src/css/style.css">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"> --}}
 
     <!-- Production css -->
     <!-- <link rel="stylesheet" href="dist/css/style.css"> -->
@@ -20,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&amp;display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="../assets/images/logo/logoBatiks.svg" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css','resources/js/app.js'])
 
     <!-- Favicon  -->
     <link rel="icon" href="src/img/favicon.jpg">
@@ -91,6 +94,7 @@
     <script src="src/vendors/typed.js/lib/typed.min.js"></script>
     <script src="src/vendors/wow.js/dist/wow.min.js"></script>
     <script src="src/vendors/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 
     <!-- Start development js -->
     <script src="src/js/theme.js"></script>

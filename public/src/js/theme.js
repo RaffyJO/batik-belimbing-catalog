@@ -6,7 +6,7 @@
    * Functions
    * ------------------------------------------------------------------------
    */
-  
+
   // Back to top button
   const myBacktotop = function () {
     // browser window scroll 
@@ -25,7 +25,7 @@
     };
 
     var remove_class_back_scroll = function remove_class_back_scroll() {
-      back_to_top.classList.remove("block","opacity-90");
+      back_to_top.classList.remove("block", "opacity-90");
       back_to_top.classList.add("hidden");
     };
 
@@ -88,9 +88,9 @@
     };
 
     const scroll_a = document.querySelectorAll('.back-top');
-    if ( scroll_a !=null) {
+    if (scroll_a != null) {
       for (var i = 0; i < scroll_a.length; i++) {
-        scroll_a[i].addEventListener("click", function(){
+        scroll_a[i].addEventListener("click", function () {
           animatedScrollTo({
             easing: easeInQuint,
             duration: 800
@@ -115,9 +115,9 @@
   // Preloader
   const myPreloader = function () {
     var xpre = document.querySelector(".preloader");
-    if ( xpre != null) {
-      window.addEventListener('load',function(){
-        document.querySelector('body').classList.add("loaded-success")  
+    if (xpre != null) {
+      window.addEventListener('load', function () {
+        document.querySelector('body').classList.add("loaded-success")
       });
     }
   }
@@ -126,7 +126,7 @@
   const myLightbox = function () {
     // GLightbox
     const lightbox_class = document.querySelector(".glightbox3");
-    if ( lightbox_class != null) {
+    if (lightbox_class != null) {
       const lightbox = GLightbox({
         selector: '.glightbox3',
         touchNavigation: true,
@@ -140,52 +140,52 @@
   const mySplidejs = function () {
     // mySplidejs
     const postslider_class = document.querySelector("#post-carousel");
-    if ( postslider_class != null) {
-        const postslider = new Splide( postslider_class, {
-          rewind    : true,
-          pagination: true,
-          arrows    : true,
-          type   : 'loop',
-          drag   : 'free',
-          perPage: 6,
-          perMove     : 1,
-          gap      : 24,
-          breakpoints: {
-            1200: {
-              perPage: 4,
-            },
-            768: {
-              perPage: 3,
-            },
-            500: {
-              perPage: 2,
-            },
-          }
-        } );
-        postslider.mount();
-      }
+    if (postslider_class != null) {
+      const postslider = new Splide(postslider_class, {
+        rewind: true,
+        pagination: true,
+        arrows: true,
+        type: 'loop',
+        drag: 'free',
+        perPage: 3,
+        perMove: 1,
+        gap: 24,
+        breakpoints: {
+          1200: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          500: {
+            perPage: 1,
+          },
+        }
+      });
+      postslider.mount();
+    }
   }
 
   // Typed Js
   const myTyped = function () {
     var x = document.querySelectorAll('[data-toggle="typed"]');
-    "undefined"!=typeof Typed&&x&&[]
-    .forEach.call( x, function(x){
-      !function(x){
-        var typo = x.dataset.options;
-        typo = typo?JSON.parse(typo):{};
-        var object = Object.assign({
-          typeSpeed:100,
-          backSpeed:100,
-          backDelay:1e3,
-          loop:!0
-        },typo);
-        new Typed(x,object)
-      }(x)
-    });
+    "undefined" != typeof Typed && x && []
+      .forEach.call(x, function (x) {
+        !function (x) {
+          var typo = x.dataset.options;
+          typo = typo ? JSON.parse(typo) : {};
+          var object = Object.assign({
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1e3,
+            loop: !0
+          }, typo);
+          new Typed(x, object)
+        }(x)
+      });
   }
 
-   // wow animate
+  // wow animate
   const myWow = function () {
     new WOW().init();
   }
@@ -193,12 +193,12 @@
   // Smooth Scroll Anchor
   const mySmooth = function () {
     var scroll = new SmoothScroll('a[href*="#"]', {
-      offset : 80,
+      offset: 80,
       speed: 1200,
       speedAsDuration: true
     });
   }
-  
+
   // if scroll down
   const myScrollspy = function () {
     var scrollpos = document.body.scrollTop || document.documentElement.scrollTop;
@@ -222,28 +222,28 @@
         remove_class_on_scroll();
       }
     }
-    
+
     var navCustomone = function navCustomone() {
       var section = document.querySelectorAll(".section");
-      if ( section != null) {
-	      var sections = {};
-	      var i = 0;
+      if (section != null) {
+        var sections = {};
+        var i = 0;
 
-	      Array.prototype.forEach.call(section, function(e) {
-	        sections[e.id] = e.offsetTop;
-	      });
+        Array.prototype.forEach.call(section, function (e) {
+          sections[e.id] = e.offsetTop;
+        });
 
-	      window.onscroll = function() {
-	        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        window.onscroll = function () {
+          var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-	        for (i in sections) {
-	          if (sections[i] <= scrollPosition + nav_height ) {
-	            document.querySelector('.navbar>li>.active').classList.remove('active');
-	            document.querySelector('a[href*=' + i + ']').classList.add('active');
-	          }
-	        }
-	      }
-	    }
+          for (i in sections) {
+            if (sections[i] <= scrollPosition + nav_height) {
+              document.querySelector('.navbar>li>.active').classList.remove('active');
+              document.querySelector('a[href*=' + i + ']').classList.add('active');
+            }
+          }
+        }
+      }
     }
 
     // if nav start not in top and not scroll
@@ -271,12 +271,12 @@
         menu_dropa[i].classList.toggle("show");
         menu_menu_x[i].classList.toggle("hidden");
 
-       });
+      });
       menu_menu_x[i].addEventListener("click", function (event) {
         menu_dropa[i].classList.toggle("show");
         menu_menu_x[i].classList.toggle("hidden");
 
-       });
+      });
     };
 
     for (var i = 0; i < menu_dropa.length; i++) {
@@ -286,7 +286,7 @@
 
   // Custom JS
   const myCustom = function () {
-    
+
     // insert your javascript in here
 
   }
@@ -296,7 +296,7 @@
    * Launch Functions
    * ------------------------------------------------------------------------
    */
-   
+
   myBacktotop();
   myPreloader();
   menu_Mobile();
