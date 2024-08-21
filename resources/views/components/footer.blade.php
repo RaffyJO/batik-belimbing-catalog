@@ -1,13 +1,13 @@
 <!--Footer content-->
-<div id="footer-content" class="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
+<div id="footer-content" class="relative pt-8 xl:pt-16 pb-2 xl:pb-2">
     <div class="container xl:max-w-6xl mx-auto px-4 overflow-hidden">
         <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
             <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
-                <div class="flex items-center mb-2">
-                    <span class="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">Batik Blimbing Malang</span>
+                <div class="flex items-center mb-0">
+                    <span class="text-3xl leading-normal mb-2 font-bold text-black">Batik Blimbing Malang</span>
                     <!-- <img src="src/img-min/logo.png" alt="LOGO"> -->
                 </div>
-                <p>Aulya Rishmawati Pemilik Batik Blimbing Malang.</p>
+                <p class="text-gray-900">Aulya Rishmawati Pemilik Batik Blimbing Malang.</p>
                 <ul class="space-x-3 mt-6 mb-6 Lg:mb-0">
                     <!--facebook-->
                     <li class="inline-block">
@@ -78,7 +78,7 @@
                 </ul>
             </div>
             <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
-                <p class="text-xl leading-normal text-gray-600">
+                <p class="text-lg leading-normal text-gray-900 font-normal">
                     Terima kasih telah mengunjungi Batik Blimbing Malang! Kami menghargai dukungan Anda dan berkomitmen untuk menyediakan pengalaman terbaik. Untuk pertanyaan, umpan balik, atau informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui media sosial kami. Kami selalu siap membantu dan mendengar pendapat Anda.
                 </p>
             </div>
@@ -91,7 +91,7 @@
     <div class="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 border-opacity-10">
         <div class="row">
             <div class="col-12 col-md text-center">
-                <p class="d-block my-3">Copyright © 2024 Batik Blimbing Malang | All rights reserved.</p>
+                <p class="d-block my-3 text-gray-900">Copyright © 2024 Batik Blimbing Malang | All rights reserved.</p>
             </div>
         </div>
     </div>

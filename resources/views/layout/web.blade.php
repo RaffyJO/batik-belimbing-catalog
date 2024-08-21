@@ -38,18 +38,18 @@
     <!-- =========={ MAIN }==========  -->
     <main id="content">
         <!-- hero start -->
-        <div id="profile" class="section relative z-0 py-16 md:pt-32 md:pb-20 bg-gray-50">
+        <div id="profile" class="section relative z-0 py-16 md:pt-32 md:pb-20" style="background: linear-gradient(to bottom, #e3fced, #ffffff);">
             @include('components.profile')
-        </div>
+        </div>        
         <!-- end Hero -->
 
         <!-- Portfolio Content -->
-        <div id="kegiatan" class="section relative z-0 py-12 md:py-16 bg-white">
+        <div id="kegiatan" class="section relative z-0 py-12 md:py-16" style="background: #e3fced;">
             @include('components.activity')
         </div><!--  End Content -->
 
         <!-- start services -->
-        <div id="penghargaan" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
+        <div id="penghargaan" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white" style="background: linear-gradient(to bottom, #ffffff, #e3fced, #ffffff);">
             @include('components.award')
         </div><!-- End Service -->
 
@@ -60,7 +60,7 @@
         <!-- End Team-->
 
         <!-- start clients -->
-        <div id="testimoni" class="section relative py-8 bg-white dark:bg-gray-800">
+        <div id="testimoni" class="section relative py-8 bg-white dark:bg-gray-800" style="background: #e3fced;">
             @include('components.testimony')
         </div><!-- End brand-->
 
@@ -71,7 +71,7 @@
     </main><!-- end main -->
 
     <!-- =========={ FOOTER }==========  -->
-    <footer class="bg-gray-50 text-gray-700">
+    <footer class="text-grey-900" style="background: linear-gradient(to bottom, #ffffff, #d1ffe2);">
         @include('components.footer')
     </footer><!-- end footer -->
 

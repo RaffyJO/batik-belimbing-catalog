@@ -13,11 +13,16 @@ class LandingPageController extends Controller
 {
     public function index()
     {    
+        Carbon::setLocale('id');
+
         $awards = Award::latest()->take(6)->get();
+        $awards->each(function ($award) {
+            $award->tanggal = Carbon::parse($award->tanggal)->translatedFormat('d F Y');
+        });
     
         $activities = Activity::latest()->take(8)->get();
         $activities->each(function ($activity) {
-            $activity->tanggal = Carbon::parse($activity->tanggal)->format('d F Y');
+            $activity->tanggal = Carbon::parse($activity->tanggal)->translatedFormat('d F Y');
         });
 
         $testimonies = Testimony::latest()->take(8)->get();

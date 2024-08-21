@@ -37,16 +37,21 @@ class TestimonyResource extends Resource
                 // ->label('Active')
                 // ->default(false)
                 // ->required(),
-                Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
-                    Textarea::make('deskripsi')
+                Textarea::make('deskripsi')
                         ->required()
                         ->placeholder('Masukkan deskripsi testimoni')
                         ->rows(10)
                         ->cols(20),
-                    FileUpload::make('gambar')
-                        ->directory('uploads/testimonies')
-                        ->maxSize(2048),
-                ]),
+                // Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
+                //     Textarea::make('deskripsi')
+                //         ->required()
+                //         ->placeholder('Masukkan deskripsi testimoni')
+                //         ->rows(10)
+                //         ->cols(20),
+                //     FileUpload::make('gambar')
+                //         ->directory('uploads/testimonies')
+                //         ->maxSize(2048),
+                // ]),
             ]);
     }
 
@@ -54,7 +59,7 @@ class TestimonyResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('gambar')->size(50),
+                // ImageColumn::make('gambar')->size(50),
                 TextColumn::make('nama')->searchable()->sortable(),
                 TextColumn::make('deskripsi')->wrap(),
             ])

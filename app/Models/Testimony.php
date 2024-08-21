@@ -12,6 +12,6 @@ class Testimony extends Model
     protected $fillable = [
         'nama',
         'deskripsi',
-        'gambar',
+        // 'gambar',
     ];
 }

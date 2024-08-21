@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->text('deskripsi');
-            $table->string('gambar')->nullable();
+            // $table->string('gambar')->nullable();
             // $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
