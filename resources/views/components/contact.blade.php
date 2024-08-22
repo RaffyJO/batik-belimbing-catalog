@@ -29,7 +29,7 @@
                     <h2 class="text-2xl leading-normal mb-4 font-bold text-gray-800 dark:text-gray-100">
                         <span class="font-semibold">Wujudkan Keindahan Ragam Batik dengan Batik Blimbing Malang</span>
                     </h2>
-                    <p class="text-gray-900 leading-relaxed font-light text-base mx-auto pb-2 lg:w-8/12">Melalui desain khas dan berkualitas tinggi, konsultasikan secara gratis bagaimana kami dapat membantu Anda mendapatkan batik terbaik   .</p>
+                    <p class="text-gray-900 leading-relaxed font-light text-base mx-auto pb-2 lg:w-8/12">Melalui desain khas dan berkualitas tinggi, konsultasikan secara gratis bagaimana kami dapat membantu Anda mendapatkan batik terbaik.</p>
                 </header><!-- end section header -->
 
                 <div class="text-center mb-2">
