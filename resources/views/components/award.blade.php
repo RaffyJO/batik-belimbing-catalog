@@ -1,8 +1,8 @@
 <div class="container xl:max-w-6xl mx-auto px-4">
     <!-- Heading start -->
     <header class="text-center mx-auto mb-12 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black"><span style="color: #45bd77;">Daftar Penghargaan</span> yang Telah Kami Dapatkan</h2>
-        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">Kami merasa terhormat dan bangga atas berbagai penghargaan yang telah kami terima sepanjang perjalanan kami.</p>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">@lang('landing-page.award.title')</h2>
+        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">@lang('landing-page.award.description')</p>
     </header><!-- End heading -->
 
     <!-- row -->

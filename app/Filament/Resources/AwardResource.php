@@ -18,9 +18,12 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\Concerns\Translatable;
 
 class AwardResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = Award::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-sparkles';

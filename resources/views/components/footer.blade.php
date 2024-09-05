@@ -4,10 +4,10 @@
         <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
             <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
                 <div class="flex items-center mb-0">
-                    <span class="text-3xl leading-normal mb-2 font-bold text-black">Batik Blimbing Malang</span>
+                    <span class="text-3xl leading-normal mb-2 font-bold text-black">@lang('landing-page.title')</span>
                     <!-- <img src="src/img-min/logo.png" alt="LOGO"> -->
                 </div>
-                <p class="text-gray-900">Aulya Rishmawati Pemilik Batik Blimbing Malang.</p>
+                <p class="text-gray-900">@lang('landing-page.owner')</p>
                 <ul class="space-x-3 mt-6 mb-6 Lg:mb-0">
                     <!--facebook-->
                     <li class="inline-block">
@@ -79,7 +79,7 @@
             </div>
             <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
                 <p class="text-lg leading-normal text-gray-900 font-normal">
-                    Terima kasih telah mengunjungi Batik Blimbing Malang! Kami menghargai dukungan Anda dan berkomitmen untuk menyediakan pengalaman terbaik. Untuk pertanyaan, umpan balik, atau informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui media sosial kami. Kami selalu siap membantu dan mendengar pendapat Anda.
+                    @lang('landing-page.closing')
                 </p>
             </div>
         </div>

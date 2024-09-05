@@ -1,7 +1,7 @@
 <div class="container xl:max-w-6xl mx-auto px-4 pt-8">
     <!-- Heading start -->
     <header class="text-center mx-auto mb-8 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Langsung ke <span style="color: #45bd77;">Lokasi Kami</span> untuk Pengalaman Batik Terbaik</h2>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">@lang('landing-page.location.title')</h2>
     </header><!-- End heading -->
 </div>
 
@@ -27,15 +27,15 @@
                 <header class="text-center mx-auto mb-4 lg:px-20">
                     <img class="mx-auto mb-4" src="{{ @asset('assets/images/logo/logoBatiks.svg') }}" width="60px" height="60px" alt="">
                     <h2 class="text-2xl leading-normal mb-4 font-bold text-gray-800 dark:text-gray-100">
-                        <span class="font-semibold">Wujudkan Keindahan Ragam Batik dengan Batik Blimbing Malang</span>
+                        <span class="font-semibold">@lang('landing-page.contact.title')</span>
                     </h2>
-                    <p class="text-gray-900 leading-relaxed font-light text-base mx-auto pb-2 lg:w-8/12">Melalui desain khas dan berkualitas tinggi, konsultasikan secara gratis bagaimana kami dapat membantu Anda mendapatkan batik terbaik.</p>
+                    <p class="text-gray-900 leading-relaxed font-light text-base mx-auto pb-2 lg:w-8/12">@lang('landing-page.contact.description')</p>
                 </header><!-- end section header -->
 
                 <div class="text-center mb-2">
                     <a target="_blank" class="py-2.5 px-10 inline-block text-center leading-normal font-medium text-black bg-green-300 border border-green-300 hover:text-black hover:ring-0 focus:outline-none focus:ring-0"
                         href="https://wa.me/6281334585892?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Batik%20Blimbing%20Malang." style="border-radius: 8px;">
-                        Pesan Sekarang
+                        @lang('landing-page.order')
                     </a>
                 </div>                              
             </div>

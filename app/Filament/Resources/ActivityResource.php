@@ -21,9 +21,12 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Facades\Date;
+use Filament\Resources\Concerns\Translatable;
 
 class ActivityResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = Activity::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-calendar';
@@ -39,11 +42,7 @@ class ActivityResource extends Resource
                     ->required()
                     ->placeholder('Masukkan lokasi kegiatan'),
                 DatePicker::make('tanggal')->required(),
-                // Toggle::make('is_active')
-                //     ->label('Active')
-                //     ->default(false)
-                //     ->required(),
-                Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
+                Grid::make(2)->schema([
                     Textarea::make('deskripsi')
                         ->required()
                         ->placeholder('Masukkan deskripsi kegiatan')

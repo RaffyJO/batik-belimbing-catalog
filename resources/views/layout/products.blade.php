@@ -41,12 +41,12 @@
                         </a>
                         <a href="{{ route('landing-page') }}">
                             <span
-                                class="text-blue-main text-base font-medium hover:text-dodger-blue-800 group-hover:text-dodger-blue-800">Kembali</span>
+                                class="text-blue-main text-base font-medium hover:text-dodger-blue-800 group-hover:text-dodger-blue-800">@lang('landing-page.product.action')</span>
                         </a>
                     </div>
                 </div>
-                <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Koleksi <span style="color: #45bd77;">Produk Eksklusif</span> dari Kami untuk Anda</h2>
-                <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">Kami menawarkan produk yang berkualitas tinggi dengan desain khas Malang. Menggabungkan keindahan motif tradisional dengan sentuhan modern.</p>
+                <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">@lang('landing-page.product.title')</h2>
+                <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">@lang('landing-page.product.description')</p>
             </header><!-- end section header -->
         
             <!-- row -->

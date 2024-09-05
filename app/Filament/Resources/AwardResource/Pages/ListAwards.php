@@ -8,11 +8,14 @@ use Filament\Resources\Pages\ListRecords;
 
 class ListAwards extends ListRecords
 {
+    use ListRecords\Concerns\Translatable;
+
     protected static string $resource = AwardResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
+            Actions\LocaleSwitcher::make(),
             Actions\CreateAction::make(),
         ];
     }

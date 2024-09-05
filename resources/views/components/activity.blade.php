@@ -1,8 +1,8 @@
 <div class="container xl:max-w-6xl mx-auto px-4">
     <!-- Heading start -->
     <header class="text-center mx-auto mb-12 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Kegiatan Menarik yang Telah Kami Lakukan</h2>
-        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">Kami terlibat dalam berbagai kegiatan yang menggambarkan komitmen kami terhadap kualitas dan kreativitas dalam dunia batik.</p>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">@lang('landing-page.activity.title')</h2>
+        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">@lang('landing-page.activity.description')</p>
     </header><!-- End heading -->
 </div>
 

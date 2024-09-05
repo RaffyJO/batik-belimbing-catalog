@@ -8,7 +8,16 @@ use Filament\Resources\Pages\CreateRecord;
 
 class CreateTestimony extends CreateRecord
 {
+    use CreateRecord\Concerns\Translatable;
+
     protected static string $resource = TestimonyResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\LocaleSwitcher::make(),
+        ];
+    }
 
     public function getRedirectUrl(): string
     {

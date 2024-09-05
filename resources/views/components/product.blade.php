@@ -1,8 +1,8 @@
 <div class="container xl:max-w-6xl mx-auto px-4">
     <!-- section header -->
     <header class="text-center mx-auto mb-12">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Koleksi <span style="color: #45bd77;">Produk Eksklusif</span> dari Kami untuk Anda</h2>
-        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">Kami menawarkan produk yang berkualitas tinggi dengan desain khas Malang. Menggabungkan keindahan motif tradisional dengan sentuhan modern.</p>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">@lang('landing-page.product.title')</h2>
+        <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto pb-2">@lang('landing-page.product.description')</p>
     </header><!-- end section header -->
    
     <!-- row -->
@@ -33,7 +33,7 @@
 
     <div class="text-center mx-auto mb-12">
         <h3 class="text-lg leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">
-            <a href="{{ route('products') }}">-- Lihat Semua Produk --</a>
+            <a href="{{ route('products') }}">-- @lang('landing-page.product.more') --</a>
         </h3>
     </div>
 </div>

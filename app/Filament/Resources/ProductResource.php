@@ -22,9 +22,11 @@ use Filament\Tables\Table;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\Concerns\Translatable;
 
 class ProductResource extends Resource
 {
+    use Translatable;
     protected static ?string $model = Product::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
@@ -36,11 +38,7 @@ class ProductResource extends Resource
                 TextInput::make('nama')
                     ->required()
                     ->placeholder('Masukkan nama produk'),
-                // Toggle::make('is_active')
-                //     ->label('Active')
-                //     ->default(false)
-                //     ->required(),
-                Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
+                Grid::make(2)->schema([
                     Textarea::make('deskripsi')
                         ->required()
                         ->placeholder('Masukkan deskripsi produk')
@@ -60,7 +58,6 @@ class ProductResource extends Resource
                 ImageColumn::make('gambar')->size(50),
                 TextColumn::make('nama')->searchable()->sortable(),
                 TextColumn::make('deskripsi')->wrap(),
-                // ToggleColumn::make('is_active')->label('Active'),
             ])
             ->filters([
                 //

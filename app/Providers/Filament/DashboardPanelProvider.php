@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Filament\SpatieLaravelTranslatablePlugin;
 
 class DashboardPanelProvider extends PanelProvider
 {
@@ -53,6 +54,9 @@ class DashboardPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
+            ->plugin(SpatieLaravelTranslatablePlugin::make()
+                ->defaultLocales(['id', 'en'])
+            )
             ->brandName('Batik Blimbing Malang');
     }
 }

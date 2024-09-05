@@ -2,7 +2,7 @@
     <!-- Heading start -->
     <header class="text-center mx-auto mb-12 lg:px-20">
         <h2 class="text-xl leading-normal mb-2 font-bold text-black">
-            Telah Dipercaya oleh Ribuan Pelanggan di Berbagai Daerah
+            @lang('landing-page.activity.title')
         </h2>
     </header><!-- End heading -->
 </div>

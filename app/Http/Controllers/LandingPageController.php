@@ -13,7 +13,7 @@ class LandingPageController extends Controller
 {
     public function index()
     {    
-        Carbon::setLocale('id');
+        Carbon::setLocale(app()->getLocale());
 
         $awards = Award::latest()->take(6)->get();
         $awards->each(function ($award) {

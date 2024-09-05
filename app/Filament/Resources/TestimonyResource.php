@@ -19,9 +19,12 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\Concerns\Translatable;
 
 class TestimonyResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = Testimony::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
@@ -33,25 +36,11 @@ class TestimonyResource extends Resource
                 TextInput::make('nama')
                     ->required()
                     ->placeholder('Masukkan nama testimoni'),
-                // Toggle::make('is_active')
-                // ->label('Active')
-                // ->default(false)
-                // ->required(),
                 Textarea::make('deskripsi')
                         ->required()
                         ->placeholder('Masukkan deskripsi testimoni')
                         ->rows(10)
                         ->cols(20),
-                // Grid::make(2)->schema([ // Mengatur Grid dengan 2 kolom
-                //     Textarea::make('deskripsi')
-                //         ->required()
-                //         ->placeholder('Masukkan deskripsi testimoni')
-                //         ->rows(10)
-                //         ->cols(20),
-                //     FileUpload::make('gambar')
-                //         ->directory('uploads/testimonies')
-                //         ->maxSize(2048),
-                // ]),
             ]);
     }
 
@@ -59,7 +48,6 @@ class TestimonyResource extends Resource
     {
         return $table
             ->columns([
-                // ImageColumn::make('gambar')->size(50),
                 TextColumn::make('nama')->searchable()->sortable(),
                 TextColumn::make('deskripsi')->wrap(),
             ])
