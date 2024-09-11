@@ -52,13 +52,71 @@
                         <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#hubungi">@lang('landing-page.nav.contact')</a>
                     </li>
                     <li class="relative hover:text-black py-3 lg:py-7 px-3">
-                        <select name="translate" id="translate" style="border: solid black 1.5px; border-radius: 50px; padding: 4px; background-color: transparent;" onchange="window.location.href=this.value;">
-                            <option value="{{ route('locale', ['locale' => 'id']) }}" {{ app()->getLocale() == 'id' ? 'selected' : '' }}>Indonesia</option>
-                            <option value="{{ route('locale', ['locale' => 'en']) }}" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English</option>
-                        </select>
-                    </li>
+                        <div class="language-switch">
+                            <input type="radio" id="lang-id" name="translate" value="{{ route('locale', ['locale' => 'id']) }}" {{ app()->getLocale() == 'id' ? 'checked' : '' }} />
+                            <label for="lang-id">Indonesia</label>
+                            <input type="radio" id="lang-en" name="translate" value="{{ route('locale', ['locale' => 'en']) }}" {{ app()->getLocale() == 'en' ? 'checked' : '' }} />
+                            <label for="lang-en">English</label>
+                            <span class="switch"></span>
+                        </div>
+                    </li>                  
                 </ul>
             </div>
         </div>
     </div>
 </nav>
+
+<style>
+    .language-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+    .language-switch input[type="radio"] {
+        display: none;
+    }
+
+    .language-switch label {
+        padding: 10px;
+        cursor: pointer;
+        border: solid 1.5px black;
+        border-radius: 50px;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .language-switch input[type="radio"]:checked + label {
+        background-color: black;
+        color: white;
+    }
+
+    .language-switch .switch {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        border-radius: 50px;
+        transition: transform 0.3s ease;
+        z-index: -1;
+    }
+
+    #lang-id:checked ~ .switch {
+        transform: translateX(0%);
+    }
+
+    #lang-en:checked ~ .switch {
+        transform: translateX(100%);
+    }
+</style>
+
+<script>
+    document.querySelectorAll('input[name="translate"]').forEach((elem) => {
+        elem.addEventListener('change', function() {
+            window.location.href = this.value;
+        });
+    });
+</script>

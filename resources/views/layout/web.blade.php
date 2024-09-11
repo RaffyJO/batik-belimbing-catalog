@@ -15,7 +15,7 @@
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"> --}}
 
     <!-- Production css -->
-    <!-- <link rel="stylesheet" href="dist/css/style.css"> -->
+    {{-- <link rel="stylesheet" href="dist/css/style.css"> --}}
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&amp;display=swap"

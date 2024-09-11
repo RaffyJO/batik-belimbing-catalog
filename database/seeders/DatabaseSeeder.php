@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@batik.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('batikblimbing'),
         ]);
 
         $this->call(ProductSeeder::class);
