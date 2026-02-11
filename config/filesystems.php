@@ -56,6 +56,13 @@ return [
             'throw' => false,
         ],
 
+        'uploads_public_html' => [
+            'driver' => 'local',
+            'root' => '/home/u578652806/domains/batikblimbingmalang.com/public_html',
+            'url' => env('APP_URL'),
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

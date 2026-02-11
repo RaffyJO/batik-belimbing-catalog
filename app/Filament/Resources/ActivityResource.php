@@ -49,7 +49,9 @@ class ActivityResource extends Resource
                         ->rows(10)
                         ->cols(20),
                     FileUpload::make('gambar')
+                        ->disk('uploads_public_html')
                         ->directory('uploads/activities')
+                        ->visibility('public')
                         ->maxSize(2048),
                 ]),
             ]);
@@ -59,11 +61,11 @@ class ActivityResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('gambar')->size(50),
+                ImageColumn::make('gambar')->disk('uploads_public_html')->size(50),
                 TextColumn::make('nama')->searchable()->sortable(),
                 TextColumn::make('lokasi')->searchable()->sortable(),
                 TextColumn::make('tanggal')->searchable()->sortable(),
-                TextColumn::make('deskripsi')->wrap(),            
+                TextColumn::make('deskripsi')->wrap(),
             ])
             ->filters([
                 //
